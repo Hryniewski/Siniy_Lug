@@ -202,18 +202,43 @@
     padding-bottom: 75px;
     border-bottom: var(--border);
   }
+
+  #acc-cards {
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+  }
   
+    
+
+.bg-header {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30.72px;
+    color: #ffffff;
+}
+
+.bg-text {
+    position: absolute;
+    padding-left: 34px;
+    padding-bottom: 28px;
+}
   #acc-cards {
     display: flex;
     column-gap: 29px;
   }
   
   #acc-card1 {
-    width: 555px;
     height: 600px;
     background-image: url("./apart.png");
-  }
-  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 555px;
+ }
     #apart {
     padding-top: 490px;
     padding-bottom: 28px;
@@ -243,19 +268,31 @@
     margin-left: 18px;
   }
   
-  #acc-cards article:last-of-type {
+  
+  
+  #acc-card2, #acc-card3 {
     display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-  }
-  
-  #acc-cards article:last-of-type > div {
-    width: 540px;
+    max-width: 540px;
     height: 285px;
-    padding: 84px 262px 28px 73px;
-    background-color: #EAEDF2;
-  }
-  
+    background: #EAEDF2;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.hotel-text, .loyal-text {
+    padding-left: 72px;
+}
+
+.hotel .loyal h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.hotel .loyal h3 {
+    font-size: 14px;
+    font-weight: 400;
+}
   
   #acc-card2 h3{
     width: 230px;
@@ -318,6 +355,9 @@
     font-size: 14px;
     justify-content: space-between;
     padding-block: 56px 70px;
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   #footer a {
@@ -342,9 +382,7 @@
   }
   
   #feedback {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    margin-bottom: 14px;
   }
   
   #feedback a {
