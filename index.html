@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Синий луг</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
 </head>
 <body>
     <header>
+        <div class="container">
     <section id="header-top">
     <div id="left-side">
     <img src="./logo.svg" alt="Синий луг">
@@ -21,25 +24,24 @@
     </section>
     <section id="header-bottom">
         <div id="header-left-menu">
-            <ul>
-                <li><a href="#">КУРОРТ</a></li>
-                <li><a href="#">ЧЕМ ЗАНЯТЬСЯ</a></li>
-                <li><a href="#">КУПИТЬ ОНЛАЙН</a></li>
-                <li><a href="#">АФИША МЕРОПРИЯТИЙ</a></li>
-                <li><a href="#">ПРОЖИВАНИЕ</a></li>
-            </ul>
+            <a href="#">КУРОРТ</a>
+            <a href="#">ЧЕМ ЗАНЯТЬСЯ</a>
+            <a href="#">КУПИТЬ ОНЛАЙН</a>
+            <a href="#">АФИША МЕРОПРИЯТИЙ</a>
+            <a href="#">ПРОЖИВАНИЕ</a>
         </div>
         <div id="header-right-menu">
-            <ul>
-                <li><a href="#">ПРОГРАММА ЛОЯЛЬНОСТИ</a></li>
-                <li><a href="#">ДЛЯ БИЗНЕСА</a></li>
-            </ul>
+            <a href="#">ПРОГРАММА ЛОЯЛЬНОСТИ</a>
+            <a href="#">ДЛЯ БИЗНЕСА</a>
         </div>
+    </div>
         </header>
     <main>
     </section>
     <section id="resort-photo">
+        <div id="mountains">
         <img src="./mountains.png" alt="Курорт Синий Луг">
+        </div>
     </section>
     <section id="entertaiment">
         <h1>ОТДЫХАЙ НА КУРОРТЕ СИНИЙ ЛУГ</h1>
@@ -65,31 +67,41 @@
     </section>
     <section id="accomodation">
         <div class="subtitle">Проживание на курорте</div>
+        <div id="acc-cards">
+            <article>
         <div id="acc-card1">
-            <div>Апартаменты люкс</div>
-            <button>ЗАБРОНИРОВАТЬ</button>
-            <button>ПОСМОТРЕТЬ</button>
+            <div id="apart">
+            <h3>Апартаменты люкс</h3>
+            <button id="book">ЗАБРОНИРОВАТЬ</button>
+            <button id="show">ПОСМОТРЕТЬ</button>
+            </div>
         </div>
+        </article>
+        <article>
         <div id="acc-card2">
-            <div>Подберите отель по выгодной цене</div>
-            <button>ПОДОБРАТЬ</button>
+            <h3>Подберите отель по выгодной цене</h3>
+            <button id="select">ПОДОБРАТЬ<span id="arrow"></span></button>
         </div>
         <div id="acc-card3">
-            <div>Программа лояльности</div>
+            <h3>Программа лояльности</h3>
             <p>Покупайте услуги курорта со скидкой до 20% и получите до 300 баллов за регистрацию!</p>
-            <button>УЧАСТВОВАТЬ</button>
-            <button>ПОДРОБНЕЕ</button>
+            <div>
+            <button id="join">УЧАСТВОВАТЬ</button>
+            <button id="detailed">ПОДРОБНЕЕ</button>
+            </div>
+        </div>
+        </article>
         </div>
     </section>
     </main>
     <footer>
         <section id="footer">
-            <div id="copyright">
-                <div>© 2001-2020 Синий луг</div>
-                <div>Официальный сайт Курорта Синий Луг</div>
+            <div id="footer-info">
+                <div id="copyright">© 2001-2020 Синий луг</div>
+                <div id="site">Официальный сайт Курорта Синий Луг</div>
             </div>
             <div id="policy">
-                <a href="#">Политика конфиденциальности</a>
+                <a href="#" id="policy">Политика конфиденциальности</a>
             </div>
             <div id="feedback">
                 <a href="#">Обратная связь</a>
